@@ -1,26 +1,35 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
 
-  <groupId>de.martin_senne</groupId>
-  <artifactId>jCommandLine</artifactId>
-  <version>1.0</version>
-  <packaging>jar</packaging>
+    <groupId>de.martin_senne</groupId>
+    <artifactId>jCommandLine</artifactId>
+    <version>1.0</version>
+    <packaging>jar</packaging>
 
-  <name>jCommandLine</name>
-  <url>https://github.com/MartinSenne/jCommandLine</url>
+    <name>jCommandLine</name>
+    <description>jCommandline is a java library for parsing and evaluating command-line parameters.</description>
+    <url>https://github.com/MartinSenne/jCommandLine</url>
 
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-  </properties>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
 
-  <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.10</version>
-      <scope>test</scope>
-    </dependency>
-  </dependencies>
+    <licenses>
+        <license>
+            <name>GNU Lesser General Public License</name>
+            <url>http://www.gnu.org/licenses/lgpl.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.10</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
 </project>
 
