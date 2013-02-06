@@ -2,7 +2,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>de.martin_senne</groupId>
+    <groupId>de.martin-senne</groupId>
     <artifactId>jCommandLine</artifactId>
     <version>1.0</version>
     <packaging>jar</packaging>
@@ -31,5 +31,41 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+    
+    <developers>
+        <developer>
+            <name>Martin Senne</name>
+            <id>MartinSenne</id>
+            <email>mail@martin-senne.de</email>
+            <url>http://martin-senne.de</url>
+            <roles>
+                <role>Main Developer</role>
+            </roles>
+        </developer>
+    </developers>
+    
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-gpg-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>sign-artifacts</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>sign</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+    
+    <scm>
+        <connection>scm:git:git@github.com:MartinSenne/jCommandLine.git</connection>
+        <developerConnection>scm:git:git@github.com:MartinSenne/jCommandLine.git</developerConnection>
+        <url>git@github.com:MartinSenne/jCommandLine.git</url>
+    </scm>
 </project>
 
