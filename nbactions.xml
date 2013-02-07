@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+    <action>
+        <actionName>CUSTOM-src javadoc sign</actionName>
+        <displayName>src javadoc sign</displayName>
+        <goals>
+            <goal>clean</goal>
+            <goal>install</goal>
+        </goals>
+        <activatedProfiles>
+            <activatedProfile>src</activatedProfile>
+            <activatedProfile>javadoc</activatedProfile>
+            <activatedProfile>sign</activatedProfile>
+        </activatedProfiles>
+    </action>
+    <action>
+            <actionName>CUSTOM-clean deploy with src javadoc sign</actionName>
+            <displayName>clean deploy with src javadoc sign</displayName>
+            <goals>
+                <goal>clean</goal>
+                <goal>deploy</goal>
+            </goals>
+            <activatedProfiles>
+                <activatedProfile>src</activatedProfile>
+                <activatedProfile>javadoc</activatedProfile>
+                <activatedProfile>sign</activatedProfile>
+            </activatedProfiles>
+        </action>
+</actions>
