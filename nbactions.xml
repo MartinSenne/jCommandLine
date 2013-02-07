@@ -26,4 +26,28 @@
                 <activatedProfile>sign</activatedProfile>
             </activatedProfiles>
         </action>
+    <action>
+            <actionName>CUSTOM-release clean src javadoc sign</actionName>
+            <displayName>release clean src javadoc sign</displayName>
+            <goals>
+                <goal>release:clean</goal>
+            </goals>
+            <activatedProfiles>
+                <activatedProfile>src</activatedProfile>
+                <activatedProfile>javadoc</activatedProfile>
+                <activatedProfile>sign</activatedProfile>
+            </activatedProfiles>
+        </action>
+    <action>
+            <actionName>CUSTOM-release:prepare src javadoc sign</actionName>
+            <displayName>release:prepare src javadoc sign</displayName>
+            <goals>
+                <goal>release:prepare</goal>
+            </goals>
+            <activatedProfiles>
+                <activatedProfile>src</activatedProfile>
+                <activatedProfile>javadoc</activatedProfile>
+                <activatedProfile>sign</activatedProfile>
+            </activatedProfiles>
+        </action>
 </actions>
